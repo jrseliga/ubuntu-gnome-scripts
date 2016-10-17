@@ -1,0 +1,11 @@
+{
+    "name": "jrseliga/ubuntu-gnome-scripts",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Justin Seliga",
+            "email": "jseliga@agilesdesign.com"
+        }
+    ],
+    "require": {}
+}
