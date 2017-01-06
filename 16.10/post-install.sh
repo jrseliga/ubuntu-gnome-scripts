@@ -31,6 +31,10 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 sudo apt install software-properties-common
 sudo add-apt-repository -y ppa:team-xbmc/unstable
 
+# mssql server
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+curl https://packages.microsoft.com/config/ubuntu/16.04/mssql-server.list | sudo tee /etc/apt/sources.list.d/mssql-server.list
+
 # remmina
 sudo add-apt-repository -y ppa:remmina-ppa-team/remmina-next
 
@@ -64,9 +68,14 @@ sudo apt -y install gparted
 sudo apt -y install inkscape
 sudo apt -y install kodi
 sudo apt -y install meld
+sudo apt -y install mssql-server
+sudo apt -y install mysql-server
 sudo apt -y install mysql-workbench
 sudo apt -y install network-manager-vpnc
 sudo apt -y install network-manager-vpnc-gnome
+sudo apt -y install nginx
+sudo apt -y install php-fpm
+sudo apt -y install php-mysql
 sudo apt -y install openssh-server
 sudo apt -y install remmina
 sudo apt -y install smartgithg
