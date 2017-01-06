@@ -110,7 +110,7 @@ sudo apt install -f -y
 sudo dpkg -i slack.deb
 
 # install synergy
-wget -O "synergy.deb" "http://symless.com/files/packages/synergy-v1.8.3-stable-db9181b-Linux-x86_64.deb?v32"
+wget -O "synergy.deb" "http://symless.com/files/packages/synergy-v1.8.6-stable-2ab21aa-Linux-x86_64.deb?v32"
 sudo dpkg -i synergy.deb
 sudo apt install -f -y
 sudo dpkg -i synergy.deb
