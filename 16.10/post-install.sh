@@ -74,6 +74,7 @@ sudo apt -y install mysql-workbench
 sudo apt -y install network-manager-vpnc
 sudo apt -y install network-manager-vpnc-gnome
 sudo apt -y install nginx
+sudo apt -y install nodejs
 sudo apt -y install php-fpm
 sudo apt -y install php-mysql
 sudo apt -y install openssh-server
@@ -91,6 +92,9 @@ sudo apt -y --force-yes install -f
 sudo apt -y --force-yes remove --purge transmission
 sudo apt -y --force-yes autoclean
 sudo apt -y --force-yes autoremove
+
+# symlink node to nodejs binary
+sudo update-alternatives --install /usr/bin/node nodejs /usr/bin/nodejs 100
 
 ###################################
 # install non repository packages #
@@ -171,5 +175,3 @@ echo "ssh://web2.agilesdesign.com:4368 web2" >> ~/.config/gtk-3.0/bookmarks
 # rename ~/.local/share/applications/telegramdesktop.desktop to telegram.desktop
 
 chsh -s `which fish`
-
-sudo reboot now
